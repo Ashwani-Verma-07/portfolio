@@ -69,9 +69,20 @@ h1 {
   font-size: large;
   text-align: left;
 }
+.symbol {
+  font-size: 22px;
+}
+.symbol .fas {
+  background-color: #00bcd4;
+  shape-image-threshold: initial;
+  color: #111827;
+  border: 2px solid #00bcd4;
+  border-radius: 50%;
+}
 .skills {
-  color: rgb(163, 195, 247);
+  color: #46c5fb;
   display: flow-root;
+  position: relative;
 }
 .projects {
   margin-top: 5%;
