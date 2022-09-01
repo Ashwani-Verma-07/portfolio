@@ -13,19 +13,16 @@ p {
 }
 h1 {
   text-align: center;
-  background-image: linear-gradient(
-    to left,
-
-    rgb(184, 253, 236),
-    rgb(4, 124, 221)
-  );
+  background-image: linear-gradient(to left, #e66aff 0%, #2db7fc 100%);
+  /* background-image: linear-gradient(to top left, #e66aff 20%, #2db7fc 90%); */
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: clamp(30px, 5vw, 45px);
-  /* mobile , , desktop*/
+  font-size: clamp(30px, 10vw, 45px);
+  /* mobile ,weight , desktop*/
 }
+/* rgb(184, 253, 236), */
 .content {
   /* font-size: clamp(18px, 1vw, 20px); */
   font-size: 1rem;
@@ -79,10 +76,18 @@ h1 {
   border: 2px solid #00bcd4;
   border-radius: 50%;
 }
+
 .skills {
   color: #46c5fb;
+  background-color: #172136;
   display: flow-root;
+  padding: 15px;
   position: relative;
+  transition: transform 0.5s;
+  border-radius: 12px;
+}
+.skills:hover {
+  transform: scale(1.1);
 }
 .projects {
   margin-top: 5%;
@@ -241,6 +246,9 @@ textarea {
     width: 100%;
   }
   .file-1 {
+    width: 100%;
+  }
+  .skills {
     width: 100%;
   }
   .contact {
