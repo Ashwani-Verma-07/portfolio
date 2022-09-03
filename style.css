@@ -67,7 +67,7 @@ h1 {
   text-align: left;
 }
 .symbol {
-  font-size: 22px;
+  font-size: 18px;
 }
 .symbol .fas {
   background-color: #00bcd4;
@@ -85,6 +85,7 @@ h1 {
   position: relative;
   transition: transform 0.5s;
   border-radius: 12px;
+  width: 50%;
 }
 .skills:hover {
   transform: scale(1.1);
@@ -92,6 +93,16 @@ h1 {
 .projects {
   margin-top: 5%;
   margin-bottom: 10%;
+}
+.columns {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.rows::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .Button-1 {
   background-color: #111827;
@@ -133,7 +144,7 @@ h1 {
 }
 .reveal {
   position: relative;
-  transform: translateY(75px);
+  transform: translateY(100px);
   opacity: 0;
   transition: 1s all ease;
   margin-bottom: 7%;
