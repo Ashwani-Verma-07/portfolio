@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/logo.png"/>
+    <script
+      src="https://kit.fontawesome.com/68ec419216.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div style="margin: 5%;">
@@ -59,7 +64,6 @@
                 </div>
             </div>
             <br>
-            <button class="Button-1"><a href="assets/Ashwani's Resume.pdf" style="text-decoration: none;color:#46c5fb" >Resume</a></button>
       </div>
      </div>
       <hr style="width: 100%;border-bottom: 2px solid white;margin-top: 10%;" class="reveal">
@@ -176,55 +180,60 @@
           <hr style="width: 100%;border-bottom: 2px solid white;margin-top: 10%;" class="reveal">
 
           <div class="reveal">
-            <section class="contact">
-            <h1>Contact Me</h1>
-            <div class="container" style="width:100%;">
-              <div class="contactinfo">
-                <div class="box">
-                  <div class="icon"><i class="fa fa-phone-alt" ></i></div>
-                  <div class="text"> <h3>Phone</h3>
-                    <p style="text-align: left;">+91-9205913782</p></div>
-                </div>
-                <div class="box">
-                  <div class="icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
-                  <div class="text">
-                    <h3>Email</h3>
-                    <p>ashverma017@gmail.com</p>
+            <section>
+            <h1>Contact Me</h1> 
+                <div class="container">
+                  <div class="row">
+                    <div class="contact-left">
+                      <div class="icons-info">
+                      <p><i class="fa-solid fa-envelope"></i>ashverma017@gmail.com</p>
+                      <p ><i class="fas fa-mobile-alt" style="margin-left:-70px;"></i>+91-9205913782</p>
+                      <p>
+                        <i class="fa-solid fa-location-dot" style="margin-left: 10px;"></i>C-277 Swaranjayanti puram
+                      </p>
+                     
+                      </div>
+                      <div class="social-icons">
+                        <a href="https://github.com/Ashwani-Verma-07"
+                          ><i class="fa-brands fa-github"></i
+                        ></a>
+                        <a href="https://www.linkedin.com/in/ashwani-verma-64953820a/"
+                        ><i class="fa-brands fa-linkedin"></i
+                      ></a>
+                        <a href="https://www.instagram.com/ashwani017/"
+                          ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                        <a href="https://www.facebook.com/ashwani.verma.18062533/"
+                          ><i class="fa-brands fa-facebook"></i
+                        ></a>
+                      </div>
+                      <a href="assests/Ashwani.pdf" download class="btn btn2"
+                        >Download Resume</a
+                      >
+                    </div>
+                    <div class="contact-right">
+                      <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input
+                          type="email"
+                          name="Email"
+                          placeholder="Your Email"
+                          required
+                        />
+                        <textarea
+                          name="Message"
+                          rows="6"
+                          placeholder="Your Message"
+                          required
+                        ></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                      </form>
+                      <span id="msg"></span>
+                    </div>
                   </div>
-                 
                 </div>
-                
-                <div class="box">
-                  <div class="icon"><i class="fa fa-map-marker-alt" aria-hidden="true"></i></div>
-                  <div class="text">
-                    <h3>Address</h3>
-                    <p style="text-align: left;">C-277 Swaran Jayanti Puram,
-                      Ghaziabad</p>
-                  </div> 
-                </div>
-              </div>
-             
-              <div class="contactform">
-              <form>
-                <h2>Send Message</h2>
-                <div class="inputbox">
-                  <input type="text" name="name" required="required">
-                  <span>Full Name</span>
-                </div>
-                <div class="inputbox">
-                  <input type="text" name="email" required="required">
-                  <span>Email</span>
-                </div>
-                <div class="inputbox">
-                 <textarea required="required" name="message"></textarea>
-                  <span style="padding-top: 15px;">Message</span>
-                </div>
-                <div class="inputbox">
-                  <input type="submit" name="" value="Send">
-                </div>
-              </form>
-              </div>
-            </div>
+              
+            
             </section>
           </div>
          
