@@ -15,7 +15,6 @@ p {
 h1 {
   text-align: center;
   background-image: linear-gradient(to left, #e66aff 0%, #2db7fc 100%);
-  /* background-image: linear-gradient(to top left, #e66aff 20%, #2db7fc 90%); */
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -163,7 +162,7 @@ h1 {
 }
 .reveal {
   position: relative;
-  transform: translateY(100px);
+  transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
   margin-bottom: 10%;

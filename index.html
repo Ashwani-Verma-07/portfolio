@@ -8,6 +8,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/logo.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
     <script
       src="https://kit.fontawesome.com/68ec419216.js"
       crossorigin="anonymous"
@@ -18,7 +19,7 @@
       <p style="color: rgb(163, 195, 247);font-weight: 700;margin-bottom: 1%;">HI, MY NAME IS <br> 
       <h1>Ashwani Verma.</h1></p>
       <p class="content">I'm a student of Ajay Kumar Garg Engineering College,
-         Ghaziabad pursuing a Bachelor degree in Computer Science and Information Technology.</p>
+         Ghaziabad pursuing a Bachelor's degree in Computer Science and Information Technology.</p>
          
   <button class="Button" onclick="window.open('https://www.linkedin.com/in/ashwani-verma-64953820a/')">Get Started</button>
      
@@ -70,6 +71,26 @@
       <div class="projects">
         <h1 style="margin-bottom: 5%;" class="reveal">My Coding Projects</h1>
         <div class="reveal">
+          <!-- <img class="file-1"src="assets/music-player.png" > -->
+        <video
+        onmouseout="this.pause();this.currentTime=0;"
+        src="assets/video/NewsFlash.mp4"
+        type="video/mp4"
+        muted
+        class="file"
+        loop
+      ></video>
+          <h2>News Application</h2>
+          <p class="con">This NewsFlash application will display the latest news articles which are verified and approved by NewsAPI.Users can browse news articles through various categories and get all details in the read more section. 
+            This ensures an infinite scroll till all outcomes are exhausted.<br><br> <a href="https://github.com/Ashwani-Verma-07/NewsFlash-App" style="color: white;text-decoration: none;">🔗GiuHub Repo</a>
+            <br><br>
+            ✔️React-Js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✔️HTML/CSS  
+            <br><br>
+            <button class="Button-1" onclick="window.open('https://drive.google.com/file/d/1jqxiY5S3_Ovo6519-DhHmtLadFY_anM7/view?usp=share_link')">View demo</button>
+          </p>
+            <br>
+          </div>
+        <div class="reveal">
          
           <video
             onmouseout="this.pause();this.currentTime=0;"
@@ -80,12 +101,11 @@
             loop
           ></video>
           <h2>Chat Application</h2>
-          <p class="con"> Chatting app allows you to communicate with others through chat. 
-            It enables you to send and receive messages. Chatting apps make it easier, simpler and faster to connect with everyone.
-            This Project connects with the firebase and sends messages to people who are connected to the same server.
+          <p class="con"> This Chatting app allows you to communicate with others through chat. It enables you to send and receive messages. It connects with the google firebase authentication and sends messages to people who are connected to the same server. 
+            If spamming or writing any abusive language will permanently block you.
       <br><br> <a href="https://github.com/Ashwani-Verma-07/Chat-Application" style="color: white;text-decoration: none;">🔗GiuHub Repo</a>
             <br><br>
-          ✔️React&nbsp;&nbsp; ✔️HTML/CSS&nbsp;&nbsp; ✔️Firebase
+          ✔️React-Js&nbsp;&nbsp; ✔️HTML/CSS&nbsp;&nbsp; ✔️Firebase
             <br><br>
             <button class="Button-1" onclick="window.open('https://chat-app-4ec8c.web.app/')">View demo</button>
             </p>
@@ -108,7 +128,7 @@
           <br><br>
           ✔️HTML/CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✔️JavaScript     
           <br><br>
-        <button class="Button-1" onclick="window.open('https://ashwani-verma-07.github.io/Weather-App/')">View demo</button>
+        <button class="Button-1" onclick="window.open('https://weather-e94fb.web.app/')">View demo</button>
         </p>
         <br>
       </div>
@@ -125,7 +145,7 @@
       <h2>2048-Game</h2>
       <p class="con">In a plain 4x4 grid, Every turn, a new tile randomly appears in an empty spot with
          a value of either 2 or 4. Tiles with the same number merge into one when they touch. Add them up 
-         to reach 2048!. If all tiles are occupied with no combinations you LOSE. The Highest score is stored 
+         to reach 2048! If all tiles are occupied with no combinations you LOSE. The Highest score is stored 
          in the local storage of the device.<br><br> <a href="https://github.com/Ashwani-Verma-07/2048-game" style="color: white;text-decoration: none;">🔗GiuHub Repo</a>
         <br><br>
         ✔️HTML/CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✔️JavaScript     
@@ -145,7 +165,7 @@
         loop
       ></video>
         <h2>Dynamic-Site</h2>
-        <p class="con">The site highlights the electromagnetic effects on bird's diversity by the mobile towers and their 
+        <p class="con">The site highlights the electromagnetic effects on the diversity of birds by the mobile towers and their 
         electromagnetic radiating objects like Cell phones. The data entered by the user is stored in google sheets and the 
         location is given by a map. The State of India's Birds report tells about this cause.<br><br> <a href="https://github.com/Ashwani-Verma-07/mini-project" style="color: white;text-decoration: none;">🔗GiuHub Repo</a>
           <br><br>
@@ -155,28 +175,7 @@
           </p>
           <br>
         </div>
-        <div class="reveal">
-          <!-- <img class="file-1"src="assets/music-player.png" > -->
-        <video
-        onmouseout="this.pause();this.currentTime=0;"
-        src="assets/video/Music.mp4"
-        type="video/mp4"
-        muted
-        class="file-1"
-        loop
-      ></video>
-          <h2>Music Player</h2>
-          <p class="con">Music is one of the best ways to relieve pressure in stressful and modern society life. 
-            The purpose of this project is to develop a player which can play the mp3 format. To browse and query the
-            storage space as well as operation of playing can be realised. Meanwhile, this application can play, pause 
-            and select songs with next button according.<br><br> <a href="https://github.com/Ashwani-Verma-07/Music-Player" style="color: white;text-decoration: none;">🔗GiuHub Repo</a>
-            <br><br>
-            ✔️HTML/CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✔️JavaScript     
-            <br><br>
-            <button class="Button-1" onclick="window.open('https://ashwani-verma-07.github.io/Music-Player/')">View demo</button>
-          </p>
-            <br>
-          </div>
+   
           <hr style="width: 100%;border-bottom: 2px solid white;margin-top: 10%;" class="reveal">
 
           <div class="reveal">
