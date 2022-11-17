@@ -162,7 +162,7 @@ h1 {
 }
 .reveal {
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(120px);
   opacity: 0;
   transition: 1s all ease;
   margin-bottom: 10%;
