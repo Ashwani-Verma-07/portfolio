@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 body {
   color: rgb(231, 229, 229);
@@ -22,7 +21,10 @@ h1 {
   font-size: clamp(30px, 10vw, 45px);
   /* mobile ,weight , desktop*/
 }
-
+.heading__logo {
+  font-size: larger;
+  font-family: math;
+}
 /* rgb(184, 253, 236), */
 .content {
   /* font-size: clamp(18px, 1vw, 20px); */
@@ -55,17 +57,122 @@ h1 {
   width: 30%;
   display: flow-root;
 }
-.describe {
+#describe {
+  padding: 0 5%;
   text-align: left;
   display: block;
   font-size: 1rem;
+  margin-bottom: 2%;
 }
+/* Background  */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+.hero {
+  background-color: #111827;
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+.hero__p {
+  color: rgb(163, 195, 247);
+  margin-bottom: 3%;
+  font-size: 50%;
+}
+.hero .heading__logo1 {
+  color: rgb(243, 201, 85);
+  font-size: 5rem;
+}
+.hero__title {
+  color: #fff;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  z-index: 1;
+  display: contents;
+}
+
+/* Background Ends */
+/* Dynamic Text */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+.container__ {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__ p {
+  font-size: 50%;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container__ p span.typed-text {
+  font-weight: 600;
+  color: rgb(243, 201, 85);
+  font-family: math;
+}
+.container__ p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container__ p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+/* Dynamic Text ends */
 .problem {
   position: static;
 }
 .content-text {
   font-size: large;
   text-align: left;
+}
+.colleges {
+  display: flex;
+  justify-content: space-around;
+}
+.colleges i {
+  color: #46c5fb;
+}
+.geeks p {
+  font-size: 1.3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: -webkit-inline-box;
+  margin-bottom: 5%;
+}
+.geeks i {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+.education__logo {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
 }
 .symbol {
   font-size: 18px;
@@ -201,13 +308,12 @@ nav ul li a:hover::after {
 .btn {
   display: block;
   margin: 50px auto;
-  width: fit-content;
+
   border: 1px solid #ff004f;
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
   color: #fff;
-  transition: background 0.5s;
 }
 
 .btn:hover {
@@ -223,6 +329,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left p {
+  display: grid;
   margin-top: 30px;
 }
 
@@ -241,13 +348,21 @@ i {
 }
 .social-icons {
   margin: 30px;
+  justify-content: center;
+  display: flex;
 }
-
+.social-icons i {
+  width: 50px;
+  height: 50px;
+}
 .social-icons a {
-  text-decoration: none;
-  font-size: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  font-size: 35px;
+  justify-content: center;
+  text-align: center;
   margin-right: 15px;
-  color: #ababab;
+  color: #e0dede;
   display: inline-block;
   transition: transform 0.5s;
 }
@@ -343,5 +458,33 @@ form .btn2 {
   }
   .file-1:hover {
     transform: scale(1.1);
+  }
+  .heading__logo {
+    font-size: 60%;
+  }
+  .hero {
+    height: 50vh;
+  }
+  .container__ {
+    height: 20vh;
+  }
+
+  .colleges {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .social-icons i {
+    width: 30px;
+    height: 30px;
+  }
+  .social-icons a {
+    font-size: 25px;
+  }
+  .hero .heading__logo1 {
+    color: rgb(243, 201, 85);
+    font-size: 2.5rem;
   }
 }

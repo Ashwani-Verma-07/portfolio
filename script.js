@@ -59,3 +59,80 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message));
 });
+
+//Dynamic Text
+const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = [
+  "a Coding Enthusiast",
+  "a Front-End Developer ",
+  "an Open Source Contributer",
+];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if (!cursorSpan.classList.contains("typing"))
+      cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } else {
+    cursorSpan.classList.remove("typing");
+    setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+    if (!cursorSpan.classList.contains("typing"))
+      cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(
+      0,
+      charIndex - 1
+    );
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  // On DOM Load initiate the effect
+  if (textArray.length) setTimeout(type, newTextDelay + 250);
+});
+
+//Video
+window.addEventListener("load", videoScroll);
+window.addEventListener("scroll", videoScroll);
+
+function videoScroll() {
+  if (document.querySelectorAll("video[autoplay]").length > 0) {
+    var windowHeight = window.innerHeight,
+      videoEl = document.querySelectorAll("video[autoplay]");
+
+    for (var i = 0; i < videoEl.length; i++) {
+      var thisVideoEl = videoEl[i],
+        videoHeight = thisVideoEl.clientHeight,
+        videoClientRect = thisVideoEl.getBoundingClientRect().top;
+
+      if (
+        videoClientRect <= windowHeight - videoHeight * 0.5 &&
+        videoClientRect >= 0 - videoHeight * 0.5
+      ) {
+        thisVideoEl.play();
+      } else {
+        thisVideoEl.pause();
+      }
+    }
+  }
+}
